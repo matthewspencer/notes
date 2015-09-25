@@ -5,6 +5,8 @@ body {
   line-height: 26px;
   font-weight: 400;
 
+  word-wrap: break-word;
+
   @media screen and ( min-width: $desktop-width ) {
     font-size: 18px;
     line-height: 30px;

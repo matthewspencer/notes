@@ -2,7 +2,8 @@ body {
   font-family: "Fira Mono", monospace;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 400; }
+  font-weight: 400;
+  word-wrap: break-word; }
   @media screen and (min-width: 640px) {
     body {
       font-size: 18px;
