@@ -4,7 +4,7 @@ description:         ""
 baseurl:             ""
 url:                 "https://matthewspencer.github.io"
 
-permalink:           /:year/:month/:day/:title/
+permalink:           /:title/
 relative_permalinks: true
 
 markdown:            kramdown
