@@ -1,0 +1,27 @@
+---
+layout:     default
+body-class: notes
+---
+<div class="container">
+
+  <header class="masthead">
+    <h1 class="masthead-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="archive">
+  {% for post in site.posts %}
+    {% capture current %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if current != year %}
+    {% if forloop.first != true %}</ul>{% endif %}
+      <h2 class="archive-year">{{ current }}</h2>
+      <ul class="archive-list">
+      {% capture year %}{{ current }}{% endcapture %}
+    {% endif %}
+        <li class="archive-item">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+  {% endfor %}
+    </ul>
+  </div>
+
+</div>

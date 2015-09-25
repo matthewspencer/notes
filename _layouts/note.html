@@ -1,0 +1,20 @@
+---
+layout:     default
+body-class: notes
+---
+<div class="container">
+
+  <article class="note">
+    <h1 class="note-title">
+      {{ page.title }}
+    </h1>
+    <div class="note-content">
+      {{ content }}
+    </div>
+  </article>
+
+  <div class="go-back">
+    <a href="{{ "/" | prepend: site.baseurl }}">← View other notes</a>
+  </div>
+
+</div>
