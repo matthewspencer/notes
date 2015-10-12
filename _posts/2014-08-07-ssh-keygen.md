@@ -15,6 +15,11 @@ Next copy the public key to the remote server, adding it to the list of authoriz
 
     cat ~/.ssh/unique_key_name.pub | ssh username@server "cat >> ~/.ssh/authorized_keys"
 
+If either the `.ssh` directory or `authorized_keys` file don’t exist, create them with the following permissions:
+
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/authorized_keys
+
 Now, when logging into the server specify which key to use by setting the `-i` flag.
 
     ssh -i $HOME/.ssh/unique_key_name username@server
