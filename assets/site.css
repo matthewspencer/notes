@@ -1,5 +1,5 @@
 body {
-  font-family: "Fira Mono", monospace;
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -23,7 +23,8 @@ h1 {
 a:hover {
   text-decoration: none; }
 
-pre, code {
+pre,
+code {
   font-family: "Fira Mono", monospace;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
@@ -31,7 +32,8 @@ pre, code {
   white-space: -o-pre-wrap;
   word-wrap: break-word; }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -43,17 +45,24 @@ sup {
 sub {
   bottom: -0.25em; }
 
-em, i {
+em,
+i {
   font-style: normal; }
-  em:before, em:after, i:before, i:after {
+  em:before, em:after,
+  i:before,
+  i:after {
     content: '_'; }
 
-strong, b {
+strong,
+b {
   font-weight: normal; }
-  strong:before, strong:after, b:before, b:after {
+  strong:before, strong:after,
+  b:before,
+  b:after {
     content: '**'; }
 
-html, body {
+html,
+body {
   background-color: white; }
 
 figure {
@@ -87,10 +96,12 @@ img {
   margin-bottom: 4px;
   font-size: 15px;
   border-top: 2px solid black; }
+
 .archive-list {
   margin-top: 0px;
   padding-left: 0px;
   list-style: none; }
+
 .archive-item {
   margin-bottom: 8px; }
 
