@@ -1,11 +1,11 @@
-title:               Matthew Spencer
-description:         ""
+title:       Matthew Spencer
+description: ""
 
-baseurl:             ""
-url:                 "https://matthewspencer.github.io"
-permalink:           /:title/
+baseurl:     ""
+url:         "https://matthewspencer.github.io"
+permalink:   /:title/
 
-markdown:            kramdown
+markdown:    kramdown
 
 exclude:
   - bin
