@@ -3,9 +3,7 @@ description:         ""
 
 baseurl:             ""
 url:                 "https://matthewspencer.github.io"
-
 permalink:           /:title/
-relative_permalinks: true
 
 markdown:            kramdown
 
