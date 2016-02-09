@@ -45,22 +45,6 @@ sup {
 sub {
   bottom: -0.25em; }
 
-em,
-i {
-  font-style: normal; }
-  em:before, em:after,
-  i:before,
-  i:after {
-    content: '_'; }
-
-strong,
-b {
-  font-weight: normal; }
-  strong:before, strong:after,
-  b:before,
-  b:after {
-    content: '**'; }
-
 html,
 body {
   background-color: white; }

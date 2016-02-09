@@ -57,23 +57,3 @@ sup {
 sub {
   bottom: -0.25em;
 }
-
-em,
-i {
-  font-style: normal;
-
-  &:before,
-  &:after {
-    content: '_';
-  }
-}
-
-strong,
-b {
-  font-weight: normal;
-
-  &:before,
-  &:after {
-    content: '**';
-  }
-}
