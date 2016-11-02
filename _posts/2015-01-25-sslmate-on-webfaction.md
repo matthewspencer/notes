@@ -7,7 +7,7 @@ tags:   ssl, https, sslmate, webfaction
 
 To me SSL certificates have always been relegated to the realm of ecommerce sites and big tech companies. I wanted to know a site was HTTPS before logging in, but I never really cared how it worked. Recently I read [@bcrypt](https://twitter.com/bcrypt)’s post [tls everything](https://zyan.scripts.mit.edu/blog/tls-everything/), in which I learned that HTTPS is not expensive nor is it hard to set up.
 
-This note is to document my process of getting a SSL certificate from [SSLMate](https://sslmate.com/) set up for this website on [WebFaction](https://www.webfaction.com/?aid=35667).
+This note is to document my process of getting a SSL certificate from [SSLMate](https://sslmate.com/) set up on [WebFaction](https://www.webfaction.com/?aid=35667).
 
 1. Since we will make SSLMate from source, we will need cpan to install dependencies. Follow [the instructions](http://docs.webfaction.com/software/perl.html#installing-cpan-modules) in the WebFaction documentation to setup cpan for your user account.
 1. Follow [the instructions](https://sslmate.com/help/getting_started#install) for SSLMate installation. Choose **Other** as your operating system to get the `make` instructions.
