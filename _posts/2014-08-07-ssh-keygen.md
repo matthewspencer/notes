@@ -13,7 +13,7 @@ It will prompt you to specify a filename for the key, choose something unique. S
 
 Next copy the public key to the remote server, adding it to the list of authorized keys.
 
-    cat ~/.ssh/unique_key_name.pub | ssh username@server "cat >> ~/.ssh/authorized_keys"
+    cat ~/.ssh/unique_key_name.pub | ssh username@servername "cat >> ~/.ssh/authorized_keys"
 
 If either the `.ssh` directory or `authorized_keys` file don’t exist, create them with the following permissions:
 
@@ -22,8 +22,11 @@ If either the `.ssh` directory or `authorized_keys` file don’t exist, create t
 
 Now, when logging into the server specify which key to use by setting the `-i` flag.
 
-    ssh -i $HOME/.ssh/unique_key_name username@server
+    ssh -i $HOME/.ssh/unique_key_name username@servername
 
-Finally, create an alias in your `.bash_profile` or `.aliases` file to allow for a more simple login.
+Finally, create an entry in your `~/.ssh/config` file to allow for a more simple login.
 
-    alias easylogin="ssh -i $HOME/.ssh/unique_key_name username@server"
+    Host mellowalias
+        Hostname servername
+        IdentityFile ~/.ssh/unique_key_name
+        User username
