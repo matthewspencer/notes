@@ -1,0 +1,16 @@
+{
+  "name": "we-enjoy",
+  "description": "Cool stuff to read.",
+  "author": "Matthew Spencer",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "dr-sax": "~1.0.10",
+    "imagemin": "^3.1.0",
+    "moment": "~2.8.3",
+    "source-map-loader": "^0.1.5",
+    "tumblr.js": "0.0.4",
+    "webpack": "^1.12.9",
+    "webpack-node-externals": "^1.2.0",
+    "yaml-front-matter": "~3.0.1"
+  }
+}
