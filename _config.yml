@@ -16,3 +16,6 @@ exclude:
   - bower.json
   - bower_components
   - gulpfile.js
+
+sass:
+  style: compressed
