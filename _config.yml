@@ -2,7 +2,7 @@ title:       Matthew Spencer
 description: ""
 
 baseurl:     ""
-url:         "https://matthewspencer.github.io"
+url:         "https://transitory.technology"
 permalink:   /:title/
 
 markdown:    kramdown
