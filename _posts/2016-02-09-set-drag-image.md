@@ -45,7 +45,7 @@ To recreate this behavior, use `getBoundingClientRect()` to calculate the offset
 
 Anecdotally these are the largest pixel dimensions for a drag image before cropping occurs:
 
-400×400 - Safari/Chrome
+400×400 - Safari/Chrome   
 700×450 - Firefox
 
 Noting this, it is important to scale the dimension of the drag image as well as its offset position. The following scales the `clientRect` to the smallest maximum:
