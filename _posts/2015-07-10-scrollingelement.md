@@ -30,5 +30,9 @@ Unfortunately, there currently isn’t much support for `scrollingElement`[^2]. 
 
 For now, I’m continuing target both elements.
 
+**Update October 2017**
+
+Chrome now uses `document.documentElement` for `scrollTop`. Chrome, Safari, and Firefox support `document.scrollingElement`.
+
 [^1]: Firefox and Internet Explorer use the former, Safari and Chrome (and probably Opera) use the latter.
 [^2]: At the time of writing, the next version of Chrome will support it (Chrome 44).
