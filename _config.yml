@@ -8,14 +8,10 @@ permalink:   /:title/
 markdown:    kramdown
 
 exclude:
-  - bin
   - README.md
   - LICENSE
   - package.json
   - node_modules
-  - bower.json
-  - bower_components
-  - gulpfile.js
 
 sass:
   style: compressed

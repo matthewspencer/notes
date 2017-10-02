@@ -1,12 +1,16 @@
 var $ = require('jquery')
-require('pjax')
+require('./gist')
+require('jquery-pjax')
 
 var initialized = false;
 var bodyClassCache = {};
 
 updateBodyClassCache(document.body.className)
+require('jquery-pjax')
 
 $(document)
+  .ready(loadGists)
+  .on('pjax:success', loadGists)
   .on('click', 'a:not([data-exclude])', function (event) {
 
     $.pjax.click(event, {
@@ -37,4 +41,8 @@ function updateBodyClassCache(className) {
 
   bodyClassCache[document.location.pathname] = className
 
+}
+
+function loadGists() {
+  $('[data-gist]').gist()
 }

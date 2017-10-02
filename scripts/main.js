@@ -1,2 +1,3 @@
-require('modules/router')
-require('modules/gist')
+window.$ = window.jQuery = require('jquery');
+require('./modules/router')
+require('./modules/gist')
