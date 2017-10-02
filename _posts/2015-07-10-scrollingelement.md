@@ -5,6 +5,10 @@ date:   Friday, July 10, 2015
 tags:   JavaScript, jQuery, scrollingElement
 ---
 
+> **Update October 2017**
+>
+> Chrome now uses `document.documentElement` for `scrollTop`. Chrome, Safari, and Firefox support `document.scrollingElement`.
+
 When discussing animating document scroll with jQuery, there are often examples given like this:
 
     $('html, body').animate({scrollTop: 200});
@@ -29,10 +33,6 @@ To that end, there’s [a working draft](http://dev.w3.org/csswg/cssom-view/#dom
 Unfortunately, there currently isn’t much support for `scrollingElement`[^2]. If you want to start using it today you could use [this function](https://gist.github.com/dperini/ac3d921d6a08f10fd10e) or [the polyfill](https://github.com/mathiasbynens/document.scrollingElement).
 
 For now, I’m continuing target both elements.
-
-**Update October 2017**
-
-Chrome now uses `document.documentElement` for `scrollTop`. Chrome, Safari, and Firefox support `document.scrollingElement`.
 
 [^1]: Firefox and Internet Explorer use the former, Safari and Chrome (and probably Opera) use the latter.
 [^2]: At the time of writing, the next version of Chrome will support it (Chrome 44).
