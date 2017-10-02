@@ -4,6 +4,6 @@
     "jquery-pjax": "^2.0.1"
   },
   "scripts": {
-    "build": "browserify scripts/main.js > scripts/app.js"
+    "build": "browserify scripts/main.js > scripts/app.js && uglifyjs scripts/app.js -o scripts/app.js -c -m"
   }
 }
