@@ -173,4 +173,4 @@ Configuring Karabiner:
 
 ## Adding new music
 
-One day I intend to setup [beets](https://beets.readthedocs.io/en/stable/) for organizing files, but today I still use iTunes to import need music and hit `u` in `ncmpcpp` to update the `mpd` database.
+One day I intend to setup [beets](https://beets.readthedocs.io/en/stable/) for organizing files, but today I still use iTunes to import new music and hit `u` in `ncmpcpp` to update the `mpd` database.
